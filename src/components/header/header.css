@@ -1,0 +1,92 @@
+.header {
+    background-color: #003580;     
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    .container{        
+        width: 100%;
+        color: white;
+        max-width: 1024px;
+        display: flex;
+        margin: 20px 0px 100px 0px;        
+        flex-direction: column;
+      
+        .header-list {
+            display: flex;
+            gap: 40px;     
+            margin-bottom: 50px;      
+
+            .headerListItem{
+                display: flex; 
+                align-items: center;              
+                gap:10px;
+            }
+            .headerListItem.active{
+                border: 1px solid white;
+                padding: 10px;
+                border-radius: 20px;
+               
+            }            
+        }
+
+        .headerTitle{
+
+        }
+        .headerDesc {
+            margin: 20px 0px;
+        }
+        .headerbtn{
+            background-color: #0071c2;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 130px;
+            cursor: pointer;
+        }
+
+        .headerSearch {
+            background-color: white;
+            height: 50px;
+            border: 3px solid #febb02;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: -25px;
+            width: 100%;
+            max-width: 1024px;
+
+            .headerSearchItem{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+                .date{
+                    position: absolute;
+                    top:43px
+                }
+                .headerIcon{
+                    color: lightgray;
+                }
+                .headerSearchInput{
+                    border: none;
+                    outline: none;
+
+                }
+                .headerSearchText{
+                    color: lightgray;
+                    cursor: pointer;
+                }
+
+                .option{
+                    position: absolute;
+                    top: 25px;
+                }
+            }
+        }
+
+    }
+}
